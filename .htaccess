@@ -1,0 +1,10 @@
+RewriteEngine On
+
+
+RewriteCond %{index.php} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+ 
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteRule ^course/(.*)$ course.php?name=$1 [QSA]

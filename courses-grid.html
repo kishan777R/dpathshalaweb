@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from chimpgroup.com/themeforest/smart-study/courses-grid.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Apr 2020 15:25:53 GMT -->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Courses Grid Page</title>
+<link href="assets/css/bootstrap.css" rel="stylesheet">
+<link href="assets/css/bootstrap-theme.css" rel="stylesheet">
+<link href="assets/css/iconmoon.css" rel="stylesheet">
+<link href="assets/css/chosen.css" rel="stylesheet">
+<link href="assets/css/jquery.mobile-menu.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+<link href="cs-smartstudy-plugin.css" rel="stylesheet">
+<link href="assets/css/jquery.mCustomScrollbar.html" rel="stylesheet">
+<link href="assets/css/color.css" rel="stylesheet">
+<link href="assets/css/widget.css" rel="stylesheet">
+<link href="assets/css/responsive.css" rel="stylesheet">
+<!-- <link href="assets/css/bootstrap-rtl.css" rel="stylesheet"> Uncomment it if needed! -->
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<script src="assets/scripts/jquery.js"></script>
+<script src="assets/scripts/modernizr.js"></script>
+<script src="assets/scripts/bootstrap.min.js"></script>
+</head>
+<body class="wp-smartstudy">
+<div class="wrapper"> 
+	<!-- Side Menu Start -->
+	<div id="overlay"></div>
+    <div id="mobile-menu">
+        <ul>
+            <li>
+                <div class="mm-search">
+                    <form id="search" name="search">
+                        <div class="input-group">
+                            <input type="text" class="form-control simple" placeholder="Search ..." name="srch-term" id="srch-term">
+					   <div class="input-group-btn">
+                                <button class="btn btn-default" type="submit"><i class="icon-search"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </li>
+            <li><a href="index-2.html">Home</a></li>
+			<li class="active"><a href="courses-grid.html">Courses</a>
+				<ul>
+					<li><a href="courses-grid.html">Courses grid view</a></li>
+					<li><a href="courses-simple.html">Courses Simple view</a></li>
+					<li><a href="courses-listing.html">Courses list view</a></li>
+					<li><a href="cs-courses-detail.html">Courses Detail</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Pages</a>
+				<ul>
+					<li><a href="user-detail.html">Student Dashboard</a></li>
+					<li><a href="instructor-detail.html">instructor Dashboard</a></li>
+					<li><a href="affiliations.html">Affiliations</a></li>
+					<li><a href="typography.html">Typography</a></li>
+					<li><a href="shortcode.html">Short code</a>
+						<ul>
+							<li><a href="loop.html">Loop</a></li>
+						</ul>
+					</li>
+					<li><a href="about-us.html">About Us</a></li>
+					<li><a href="faqs.html">FAQ's</a></li>
+					<li><a href="under-construction.html">Maintenance Page</a></li>
+					<li><a href="404.html">404 Page</a></li>
+					<li><a href="signup.html">Signup / Login</a></li>
+					<li><a href="pricing.html">Price Table</a></li>
+					<li><a href="#">Team</a>
+						<ul>
+							<li><a href="team-listing.html"> Team List</a></li>
+							<li><a href="team-grid.html"> Team Grid</a></li>
+							<li><a href="team-detail.html"> Team Detail</a></li>
+						</ul>
+					</li>
+					
+					<li><a href="#">Shop</a>
+						<ul>
+							<li><a href="shop.html"> Products</a></li>
+							<li><a href="shop-detail.html"> Detail</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li><a href="#">Events</a>
+				<ul>
+					<li><a href="events-grid.html">Grid View</a></li>
+					<li><a href="events-listing.html">List View</a></li>
+					<li><a href="events-detail.html">Detail</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Blog</a>
+				<ul>
+					<li><a href="blog-medium.html">Medium List</a></li>
+					<li><a href="blog-large.html">Large List</a></li>
+					 <li><a href="blog-grid.html">Grid</a></li>
+					<li><a href="blog-detail.html">Detail</a></li>
+					<li><a href="blog-2.html">Masonry</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Contact</a>
+				<ul>
+					<li><a href="contact-us.html">Contact us 1</a></li>
+					<li><a href="contact-us-02.html">Contact us 2</a></li>
+				</ul>
+			</li>
+            
+        </ul>
+    </div>
+	<!-- Side Menu End -->
+	<!-- Header Start -->
+	<header id="header" class=""> 
+		<div class="top-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <ul class="top-nav nav-left">
+                            <li><a href="#">Students</a></li>
+                            <li><a href="#">Faculty &amp; Staff</a></li>
+                            <li><a href="#">Parents</a></li>
+                            <li><a href="#">Alumni</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    	<div class="cs-user">
+                            <ul>
+                                <li><a data-target="#cs-login" href="remote.html" data-toggle="modal"><i class="icon-login"></i>Login</a></li>
+                                <li><a data-target="#cs-signup" href="remote.html" data-toggle="modal"><i class="icon-user2"></i>Signup</a></li>
+                            </ul>
+                        </div>
+                        <div class="cs-modal">
+                            <div class="modal fade" id="cs-signup" tabindex="-1" role="dialog">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h4>Create Account</h4>
+                                            <div class="cs-login-form">
+                                                <form>
+                                            <div class="input-holder">
+                                                <label class="has-error" for="cs-username">
+                                                    <strong>USERNAME</strong>
+                                                    <i class="icon-add-user"></i>
+                                                    <input type="text" class="" id="cs-username" placeholder="Type desired username">
+                                                </label>
+                                            </div>
+                                            <div class="input-holder">
+                                                <label class="has-success" for="cs-email">
+                                                    <strong>Email</strong>
+                                                    <i class="icon-envelope"></i>
+                                                    <input type="email" class="" id="cs-email" placeholder="Type desired username">
+                                                </label>
+                                            </div>
+                                            <div class="input-holder">
+                                                <label for="cs-login-password">
+                                                    <strong>Password</strong>
+                                                    <i class="icon-lock"></i>
+                                                    <input type="password" id="cs-login-password" placeholder="******">
+                                                </label>
+                                            </div>
+                                            <div class="input-holder">
+                                                <label for="cs-confirm-password">
+                                                    <strong>confirm password</strong>
+                                                    <i class="icon-lock"></i>
+                                                    <input type="password" id="cs-confirm-password" placeholder="******">
+                                                </label>
+                                            </div>
+                                            
+                                            <div class="input-holder">
+                                                <input class="cs-color csborder-color" type="submit" value="Create Account">
+                                            </div>
+                                        </form>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <a data-dismiss="modal" data-target="#cs-login" data-toggle="modal" href="javascript:;" aria-hidden="true">Already have account</a>
+                                            <div class="cs-separator"><span>or</span></div>
+                                            <div class="cs-user-social">
+                                                <em>Signin with your Social Networks</em>
+                                                <ul>
+                                                    <li><a href="#" data-original-title="facebook"><i class="icon-facebook-f"></i>facebook</a></li>
+                                                    <li><a href="#" data-original-title="twitter"><i class="icon-twitter4"></i>twitter</a></li>
+                                                    <li><a href="#" data-original-title="google-plus"><i class="icon-google4"></i>google</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="modal fade" id="cs-login" tabindex="-1" role="dialog">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h4>User Sign in</h4>
+                                            <div class="cs-login-form">
+                                                <form>
+                                                    <div class="input-holder">
+                                                        <label for="cs-username-1">
+                                                            <strong>USERNAME</strong>
+                                                            <i class="icon-add-user"></i>
+                                                            <input type="text" class="" id="cs-username-1" placeholder="Type desired username">
+                                                        </label>
+                                                    </div>
+                                                    <div class="input-holder">
+                                                        <label for="cs-login-password-1">
+                                                            <strong>Password</strong>
+                                                            <i class="icon-lock"></i>
+                                                            <input type="password" id="cs-login-password-1" placeholder="******">
+                                                        </label>
+                                                    </div>
+                                                    <div class="input-holder">
+                                                        <a class="btn-forgot-pass" data-dismiss="modal" data-target="#user-forgot-pass" data-toggle="modal" href="javascript:;" aria-hidden="true"><i class=" icon-question-circle"></i> Forgot password?</a>
+                                                    </div>
+                                                    <div class="input-holder">
+                                                        <input class="cs-color csborder-color" type="submit" value="SIGN IN">
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <div class="cs-separator"><span>or</span></div>
+                                            <div class="cs-user-social">
+                                                <em>Signin with your Social Networks</em>
+                                                <ul>
+                                                    <li><a href="#" data-original-title="facebook"><i class="icon-facebook-f"></i>facebook</a></li>
+                                                    <li><a href="#" data-original-title="twitter"><i class="icon-twitter4"></i>twitter</a></li>
+                                                    <li><a href="#" data-original-title="google-plus"><i class="icon-google4"></i>google</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="cs-user-signup">
+                                                <i class="icon-add-user"></i>
+                                                <strong>Not a Member yet? </strong>
+                                                <a class="cs-color" data-dismiss="modal" data-target="#cs-signup" data-toggle="modal" href="javascript:;" aria-hidden="true">Signup Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="user-forgot-pass" tabindex="-1" role="dialog">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h4>Password Recovery</h4>
+                                            <div class="cs-login-form">
+                                                <form>
+                                                    <div class="input-holder">
+                                                        <label for="cs-email-1">
+                                                            <strong>Email</strong>
+                                                            <i class="icon-envelope"></i>
+                                                            <input type="email" class="" id="cs-email-1" placeholder="Type desired username">
+                                                        </label>
+                                                    </div>
+                                                    <div class="input-holder">
+                                                        <input class="cs-color csborder-color" type="submit" value="Send">
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <div class="cs-user-signup">
+                                                <i class="icon-add-user"></i>
+                                                <strong>Not a Member yet? </strong>
+                                                <a href="javascript:;" data-toggle="modal" data-target="#cs-signup" data-dismiss="modal" class="cs-color" aria-hidden="true">Signup Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                        <ul class="top-nav nav-right">
+                            <li><a href="#">APPLY</a></li>
+                            <li><a href="#">PROGRAMS &amp; DEGREES</a></li>
+                            <li><a href="#">FIND FUNDINg</a></li> 
+                        </ul>
+                    </div>
+                </div>
+            </div>
+		</div>
+        <div class="main-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
+                        <div class="cs-logo cs-logo-dark">
+                            <div class="cs-media">
+                                <figure><a href="index-2.html"><img src="assets/images/cs-logo.png" alt="" /></a></figure>
+                            </div>
+                        </div>
+                        <div class="cs-logo cs-logo-light">
+                            <div class="cs-media">
+                                <figure><a href="index-2.html"><img src="assets/images/cs-logo-light.png" alt="" /></a></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-6 col-xs-6">
+                        <div class="cs-main-nav pull-right">
+                            <nav class="main-navigation">
+                                <ul>
+                                    <li><a href="index-2.html">Home</a><span>About College</span></li>
+                                    <li class="menu-item-has-children"><a href="#">Courses</a>
+                                        <span>Online Education</span>
+                                        <ul>
+                                            <li><a href="courses-grid.html">Courses grid view</a></li>
+                                            <li><a href="courses-simple.html">Courses Simple view</a></li>
+                                            <li><a href="courses-listing.html">Courses list view</a></li>
+                                            <li><a href="cs-courses-detail.html">Courses Detail</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children"><a href="#">Pages</a><span>All you need</span>
+                                    	<ul>
+                                            <li><a href="user-detail.html">Student Dashboard</a></li>
+                                            <li><a href="instructor-detail.html">instructor Dashboard</a></li>
+								    <li><a href="affiliations.html">Affiliations</a></li>
+                                        	<li><a href="typography.html">Typography</a></li>
+                                            <li class="menu-item-has-children"><a href="shortcode.html">Short code</a>
+												<ul>
+													<li><a href="loop.html">Loop</a></li>
+												</ul>
+											</li>
+                                            <li><a href="about-us.html">About Us</a></li>
+                                            <li><a href="faqs.html">FAQ's</a></li>
+                                            <li><a href="under-construction.html">Maintenance Page</a></li>
+                                            <li><a href="404.html">404 Page</a></li>
+                                            <li><a href="signup.html">Signup / Login</a></li>
+                                            <li><a href="pricing.html">Price Table</a></li>
+                                        	<li class="menu-item-has-children"><a href="#">Team</a>
+                                            	<ul>
+                                                    <li><a href="team-listing.html"> Team List</a></li>
+                                                    <li><a href="team-grid.html"> Team Grid</a></li>
+                                                    <li><a href="team-detail.html"> Team Detail</a></li>
+                                                </ul>
+                                            </li>
+                                            
+                                            <li class="menu-item-has-children"><a href="#">Shop</a>
+                                            	<ul>
+                                                    <li><a href="shop.html"> Products</a></li>
+                                                    <li><a href="shop-detail.html"> Detail</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children"><a href="#">Events</a><span>University Events</span>
+                                    	<ul>
+                                        	<li><a href="events-grid.html">Grid View</a></li>
+                                            <li><a href="events-listing.html">List View</a></li>
+                                            <li><a href="events-detail.html">Detail</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children"><a href="#">Blog</a><span>Learning Objectives</span>
+                                    	<ul>
+                                        	<li><a href="blog-medium.html">Medium List</a></li>
+                                            <li><a href="blog-large.html">Large List</a></li>
+                                             <li><a href="blog-grid.html">Grid</a></li>
+                                            <li><a href="blog-detail.html">Detail</a></li>
+											<li><a href="blog-2.html">Masonry</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children"><a href="#">Contact</a><span>inquire with us</span>
+                                    	<ul>
+                                            <li><a href="contact-us.html">Contact us 1</a></li>
+                                            <li><a href="contact-us-02.html">Contact us 2</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="cs-search-area">
+                                        <div class="cs-menu-slide">
+                                            <div class="mm-toggle">
+                                                <i class="icon-align-justify"></i>
+                                            </div>            
+                                        </div>
+                                        <div class="search-area">
+                                            <a href="#"><i class="icon-search2"></i></a>
+                                            <form>
+                                                <div class="input-holder">
+                                                    <i class="icon-search2"></i>
+                                                    <input type="text" placeholder="Enter any keyword">
+                                                    <label class="cs-bgcolor">
+                                                        <i class="icon-search5"></i>
+                                                        <input type="submit" value="search">
+                                                    </label>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="cs-search-area hidden-md hidden-lg">
+                                <div class="cs-menu-slide">
+                                    <div class="mm-toggle">
+                                        <i class="icon-align-justify"></i>
+                                    </div>            
+                                </div>
+                                <div class="search-area">
+                                    <a href="#"><i class="icon-search2"></i></a>
+                                    <form>
+                                        <div class="input-holder">
+                                            <i class="icon-search2"></i>
+                                            <input type="text" placeholder="Enter any keyword">
+                                            <label class="cs-bgcolor">
+                                                <i class="icon-search5"></i>
+                                                <input type="submit" value="search">
+                                            </label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+			</div>
+		</div>
+	</header>
+	<!-- Header End --> 
+	<!-- Sub Header Start -->  
+	<div class="page-section" style="background:#ebebeb; padding:50px 0 35px;">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="cs-page-title">
+						<h1>Available Courses</h1>
+						<p style="color:#aaa;">650+ video-based courses and short courses to help you develop creative and technical skills.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Sub Header End -->
+	<!-- Breadcrumb Start -->
+	<div class="page-section" style="border-bottom:1px solid #f4f4f4;">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<ul class="cs-breadcrumb">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Academic</a></li>
+						<li><a href="#">Departments & Programs</a></li>
+						<li>Available Majors</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Breadcrumb End -->   
+	<!-- Main Start -->
+	<div class="main-section">
+	  <div class="page-section">
+	    <div class="container">
+	      <div class="row">
+	        <aside class="page-sidebar col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                <div class="cs-find-search">
+                    <h6>Find your course</h6>
+                    <span>Ranked as one of the world's most</span>
+                    <form>
+                        <div class="cs-label-area">
+									<input id="course-id" type="radio" name="course" />
+									<label for="course-id">Course ID</label>
+									<input id="course-name" type="radio" name="course" />
+									<label for="course-name">Course Name</label>
+								</div>
+                        <div class="cs-input-area">
+                            <div class="cs-input-holder"><i class="icon-search"></i><input type="text" placeholder="Enter Course name" /></div>
+                            <select data-placeholder="Select Category" class="chosen-select" tabindex="5">
+                                  <option>Select Category</option>
+                                  <option>Select Category</option>
+                                  <option>Select Category</option>
+                                  <option>Select Category</option>
+                              </select>
+                        </div>
+                        <ul class="cs-suggestions-list">
+                            <li><i class="icon-keyboard_arrow_right"></i>Order your prospectus</li>
+                            <li><i class="icon-keyboard_arrow_right"></i>A-Z courses</li>
+                        </ul>
+                        <button><i class="icon-search3"></i></button>
+                    </form>
+                </div>
+                <div class="cs-listing-filters">
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                      <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                          <h6 class="panel-title">
+                            <a role="button" data-toggle="collapse"  href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                             Courses Types
+                            </a>
+                          </h6>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in fade" role="tabpanel" aria-labelledby="headingOne">
+                          <div class="panel-body">
+                            <div class="cs-select-checklist">
+                                <ul class="cs-checkbox-list mCustomScrollbar" data-mcs-theme="dark">
+                                   <li>
+                                       <div class="checkbox">
+                                         <input id="checkbox" type="checkbox" value="Speed">
+                                         <label for="checkbox">All Courses</label>
+                                       </div>
+                                   </li>
+                                   <li>
+                                       <div class="checkbox">
+                                         <input id="checkbox1" type="checkbox" value="bases">
+                                         <label for="checkbox1">Skill Bases</label>
+                                       </div>
+                                   </li>
+                                   <li>
+                                       <div class="checkbox">
+                                         <input id="checkbox2" type="checkbox" value="Speed">
+                                         <label for="checkbox2">Open Courses</label>
+                                       </div>
+                                   </li>
+                                   <li>
+                                       <div class="checkbox">
+                                         <input id="checkbox3" type="checkbox" value="Speed">
+                                         <label for="checkbox3">Lectures</label>
+                                       </div>
+                                   </li>
+                                   <li>
+                                       <div class="checkbox">
+                                         <input id="checkbox4" type="checkbox" value="Speed">
+                                         <label for="checkbox4">E-Courses</label>
+                                       </div>
+                                   </li>
+                                   <li>
+                                       <div class="checkbox">
+                                         <input id="checkbox5" type="checkbox" value="Speed">
+                                         <label for="checkbox5">University Course</label>
+                                       </div>
+                                   </li>
+                                   <li>
+                                       <div class="checkbox">
+                                         <input id="checkbox6" type="checkbox" value="Speed">
+                                         <label for="checkbox6">Programs</label>
+                                       </div>
+                                   </li>
+                                   <li>
+                                       <div class="checkbox">
+                                         <input id="checkbox7" type="checkbox" value="Speed">
+                                         <label for="checkbox7">Programs</label>
+                                       </div>
+                                   </li>
+                                   <li>
+                                       <div class="checkbox">
+                                         <input id="checkbox8" type="checkbox" value="Speed">
+                                         <label for="checkbox8">All Courses</label>
+                                       </div>
+                                   </li>
+                                </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                          <h6 class="panel-title">
+                            <a role="button" data-toggle="collapse"  href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              Pricing
+                            </a>
+                          </h6>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse in fade" role="tabpanel" aria-labelledby="headingTwo">
+                          <div class="panel-body">
+                            <ul>
+                               <li>
+                                   <div class="checkbox">
+                                     <input id="checkbox9" type="checkbox" value="Speed">
+                                     <label for="checkbox9">All Courses</label>
+                                   </div>
+                               </li>
+                               <li>
+                                   <div class="checkbox">
+                                     <input id="checkbox10" type="checkbox" value="bases">
+                                     <label for="checkbox10">Free Courses</label>
+                                   </div>
+                               </li>
+                               <li>
+                                   <div class="checkbox">
+                                     <input id="checkbox11" type="checkbox" value="Speed">
+                                     <label for="checkbox11">Courses under $50</label>
+                                   </div>
+                               </li>
+                               <li>
+                                   <div class="checkbox">
+                                     <input id="checkbox12" type="checkbox" value="Speed">
+                                     <label for="checkbox12">Courses under $100</label>
+                                   </div>
+                               </li>
+                               <li>
+                                   <div class="checkbox">
+                                     <input id="checkbox13" type="checkbox" value="Speed">
+                                     <label for="checkbox13">Courses under $150</label>
+                                   </div>
+                               </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                          <h6 class="panel-title">
+                            <a role="button" data-toggle="collapse"  href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Availability
+                            </a>
+                          </h6>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse in fade" role="tabpanel" aria-labelledby="headingThree">
+                          <div class="panel-body">
+                            <ul>
+                               <li>
+                                   <div class="checkbox">
+                                     <input id="checkbox14" type="checkbox" value="Speed">
+                                     <label for="checkbox14">Current</label>
+                                   </div>
+                               </li>
+                               <li>
+                                   <div class="checkbox">
+                                     <input id="checkbox15" type="checkbox" value="bases">
+                                     <label for="checkbox15">Starting Soon</label>
+                                   </div>
+                               </li>
+                               <li>
+                                   <div class="checkbox">
+                                     <input id="checkbox16" type="checkbox" value="Speed">
+                                     <label for="checkbox16">Upcoming</label>
+                                   </div>
+                               </li>
+                               <li>
+                                   <div class="checkbox">
+                                     <input id="checkbox17" type="checkbox" value="Speed">
+                                     <label for="checkbox17">Self-Paced</label>
+                                   </div>
+                               </li>
+                               <li>
+                                   <div class="checkbox">
+                                     <input id="checkbox18" type="checkbox" value="Speed">
+                                     <label for="checkbox18">Archived</label>
+                                   </div>
+                               </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingfoure">
+                          <h6 class="panel-title">
+                            <a role="button" data-toggle="collapse"  href="#collapsefoure" aria-expanded="false" aria-controls="collapsefoure">
+                              Instructional Level
+                            </a>
+                          </h6>
+                        </div>
+                        <div id="collapsefoure" class="panel-collapse collapse in fade" role="tabpanel" aria-labelledby="headingfoure">
+                          <div class="panel-body">
+                            <ul>
+                               <li>
+                                   <div class="checkbox">
+                                     <input id="checkbox19" type="checkbox" value="Speed">
+                                     <label for="checkbox19">Introductory</label>
+                                     <span class="cs-values"><em></em><em></em><em></em></span>
+                                   </div>
+                               </li>
+                               <li>
+                                   <div class="checkbox">
+                                     <input id="checkbox20" type="checkbox" value="bases">
+                                     <label for="checkbox20">Intermediate</label>
+                                     <span class="cs-values"><em></em><em></em></span>
+                                   </div>
+                               </li>
+                               <li>
+                                   <div class="checkbox">
+                                     <input id="checkbox21" type="checkbox" value="Speed">
+                                     <label for="checkbox21">Advanced</label>
+                                     <span class="cs-values"><em></em></span>
+                                   </div>
+                               </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingfive">
+                          <h6 class="panel-title">
+                            <a role="button" data-toggle="collapse"  href="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+                             Degree level
+                            </a>
+                          </h6>
+                        </div>
+                        <div id="collapsefive" class="panel-collapse collapse in fade" role="tabpanel" aria-labelledby="headingfive">
+                          <div class="panel-body">
+                            <ul>
+                               <li>
+                                   <div class="checkbox">
+                                     <input id="checkbox22" type="checkbox" value="Speed">
+                                     <label for="checkbox22">Introductory</label>
+                                   </div>
+                               </li>
+                               <li>
+                                   <div class="checkbox">
+                                     <input id="checkbox23" type="checkbox" value="bases">
+                                     <label for="checkbox23">Intermediate</label>
+                                   </div>
+                               </li>
+                               <li>
+                                   <div class="checkbox">
+                                     <input id="checkbox24" type="checkbox" value="Speed">
+                                     <label for="checkbox24">Advanced</label>
+                                   </div>
+                               </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingsix">
+                          <h6 class="panel-title">
+                            <a role="button" data-toggle="collapse"  href="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
+                              Language 
+                            </a>
+                          </h6>
+                        </div>
+                        <div id="collapsesix" class="panel-collapse collapse in fade" role="tabpanel" aria-labelledby="headingsix">
+                          <div class="panel-body">
+                            <ul>
+                               <li>
+                                   <div class="checkbox">
+                                     <input id="checkbox25" type="checkbox" value="Speed">
+                                     <label for="checkbox25">Introductory</label>
+                                   </div>
+                               </li>
+                               <li>
+                                   <div class="checkbox">
+                                     <input id="checkbox26" type="checkbox" value="bases">
+                                     <label for="checkbox26">Intermediate</label>
+                                   </div>
+                               </li>
+                               <li>
+                                   <div class="checkbox">
+                                     <input id="checkbox27" type="checkbox" value="Speed">
+                                     <label for="checkbox27">Advanced</label>
+                                   </div>
+                               </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingseven">
+                          <h6 class="panel-title">
+                            <a role="button" data-toggle="collapse"  href="#collapseseven" aria-expanded="false" aria-controls="collapseseven">
+                             Duration
+                            </a>
+                          </h6>
+                        </div>
+                        <div id="collapseseven" class="panel-collapse collapse in fade" role="tabpanel" aria-labelledby="headingseven">
+                          <div class="panel-body">
+                            <ul>
+                               <li>
+                                   <div class="checkbox">
+                                     <input id="checkbox28" type="checkbox" value="Speed">
+                                     <label for="checkbox28">Introductory</label>
+                                   </div>
+                               </li>
+                               <li>
+                                   <div class="checkbox">
+                                     <input id="checkbox29" type="checkbox" value="bases">
+                                     <label for="checkbox29">Intermediate</label>
+                                   </div>
+                               </li>
+                               <li>
+                                   <div class="checkbox">
+                                     <input id="checkbox30" type="checkbox" value="Speed">
+                                     <label for="checkbox30">Advanced</label>
+                                   </div>
+                               </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </aside>
+	        <div class="page-content col-lg-9 col-md-9 col-sm-12 col-xs-12">
+	          <div class="row">
+	            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	              <div class="cs-sorting-list">
+	               	<div class="cs-left-side">
+	               	  <div class="cs-select-holder">
+	               	    <select class="chosen-select" tabindex="5">
+						  <option>Select Topic</option>
+						  <option>Select Topic</option>
+						  <option>Select Topic</option>
+						  <option>Select Topic</option>
+						</select>
+	               	  </div>
+	               	  <ul class="cs-package-list">
+	               	  	<li><a href="#." data-toggle="portfilter" data-target="all">All</a></li>
+	               	  	<li><a href="#" data-toggle="portfilter" data-target="free">Free</a></li>
+	               	  	<li><a href="#" data-toggle="portfilter" data-target="paid">Paid</a></li>
+	               	  </ul>
+	               	  <div class="cs-caption-select">
+	               	      <span class="cs-caption">CC</span>
+	               	      <input name="name" id="checkboxone" type="checkbox" value="Speed">
+						  <label for="checkboxone">Captions</label>
+	               	  </div>
+	               	</div>
+	               	<ul class="cs-list-view">
+	               		<li><a href="#"><i class="icon-sweden"></i></a></li>
+	               		<li><a href="#"><i class="icon-view_module"></i></a></li>
+	               		<li><a href="#"><i class="icon-view_headline"></i></a></li>
+	               	</ul>
+	              </div>
+	            </div>
+	            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" data-tag="paid">
+	            	<div class="cs-courses courses-grid">
+	            		<div class="cs-media">
+	            			<figure><a href="#"><img src="assets/extra-images/course-grid-img1.jpg" alt=""/></a></figure>
+	            		</div>
+	            		<div class="cs-text">
+	            		    <span class="cs-caption">CC</span>
+	            		    <div class="cs-rating">
+	            		      <div class="cs-rating-star">
+	            		        <span class="rating-box" style="width:100%;"></span>
+	            		      </div>
+	            		    </div>
+							<div class="cs-post-title">
+							  <h5><a href="#">Latest Computer Science and Programming</a></h5>
+							</div>
+							<span class="cs-courses-price"><em>$</em>289.99</span>
+							<div class="cs-post-meta">
+							  <span>By
+							    <a href="#" class="cs-color">James,</a>
+							    <a href="#" class="cs-color">Howdson</a>
+							  </span>
+							</div>
+	            		</div>
+	            	</div>
+	            </div>
+	            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" data-tag="paid">
+	            	<div class="cs-courses courses-grid">
+	            		<div class="cs-media">
+	            			<figure><a href="#"><img src="assets/extra-images/course-grid-img2.jpg" alt=""/></a></figure>
+	            		</div>
+	            		<div class="cs-text">
+	            		    <div class="cs-rating">
+	            		      <div class="cs-rating-star">
+	            		        <span class="rating-box" style="width:100%;"></span>
+	            		      </div>
+	            		    </div>
+							<div class="cs-post-title">
+							  <h5><a href="#">Basic Time Management Course</a></h5>
+							</div>
+							<span class="cs-courses-price"><em>$</em>189.99</span>
+							<div class="cs-post-meta">
+							  <span>By
+							    <a href="#" class="cs-color">James,</a>
+							    <a href="#" class="cs-color">Howdson</a>
+							  </span>
+							</div>
+	            		</div>
+	            	</div>
+	            </div>
+	            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" data-tag="paid">
+	            	<div class="cs-courses courses-grid">
+	            		<div class="cs-media">
+	            			<figure><a href="#"><img src="assets/extra-images/course-grid-img3.jpg" alt=""/></a></figure>
+	            		</div>
+	            		<div class="cs-text">
+	            		    <div class="cs-rating">
+	            		      <div class="cs-rating-star">
+	            		        <span class="rating-box" style="width:100%;"></span>
+	            		      </div>
+	            		    </div>
+							<div class="cs-post-title">
+							  <h5><a href="#">How to Become a Startup Founder</a></h5>
+							</div>
+							<span class="cs-courses-price"><em>$</em>175.99</span>
+							<div class="cs-post-meta">
+							  <span>By
+							    <a href="#" class="cs-color">James,</a>
+							    <a href="#" class="cs-color">Howdson</a>
+							  </span>
+							</div>
+	            		</div>
+	            	</div>
+	            </div>
+	            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" data-tag="paid">
+	            	<div class="cs-courses courses-grid">
+	            		<div class="cs-media">
+	            			<figure><a href="#"><img src="assets/extra-images/course-grid-img4.jpg" alt=""/></a></figure>
+	            		</div>
+	            		<div class="cs-text">
+	            		    <div class="cs-rating">
+	            		      <div class="cs-rating-star">
+	            		        <span class="rating-box" style="width:100%;"></span>
+	            		      </div>
+	            		    </div>
+							<div class="cs-post-title">
+							  <h5><a href="#">How to Design a Logo a Beginners Course</a></h5>
+							</div>
+							<span class="cs-courses-price"><em>$</em>49.99</span>
+							<div class="cs-post-meta">
+							  <span>By
+							    <a href="#" class="cs-color">James,</a>
+							    <a href="#" class="cs-color">Howdson</a>
+							  </span>
+							</div>
+	            		</div>
+	            	</div>
+	            </div>
+	            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" data-tag="paid">
+	            	<div class="cs-courses courses-grid">
+	            		<div class="cs-media">
+	            			<figure><a href="#"><img src="assets/extra-images/course-grid-img5.jpg" alt=""/></a></figure>
+	            		</div>
+	            		<div class="cs-text">
+	            			<span class="cs-caption">CC</span>
+	            		    <div class="cs-rating">
+	            		      <div class="cs-rating-star">
+	            		        <span class="rating-box" style="width:100%;"></span>
+	            		      </div>
+	            		    </div>
+							<div class="cs-post-title">
+							  <h5><a href="#">Introduction to Mobile Apps Development</a></h5>
+							</div>
+							<span class="cs-courses-price"><em>$</em>155.99</span>
+							<div class="cs-post-meta">
+							  <span>By
+							    <a href="#" class="cs-color">James,</a>
+							    <a href="#" class="cs-color">Howdson</a>
+							  </span>
+							</div>
+	            		</div>
+	            	</div>
+	            </div>
+	            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" data-tag="free">
+	            	<div class="cs-courses courses-grid">
+	            		<div class="cs-media">
+	            			<figure><a href="#"><img src="assets/extra-images/course-grid-img6.jpg" alt=""/></a></figure>
+	            		</div>
+	            		<div class="cs-text">
+	            		    <div class="cs-rating">
+	            		      <div class="cs-rating-star">
+	            		        <span class="rating-box" style="width:100%;"></span>
+	            		      </div>
+	            		    </div>
+							<div class="cs-post-title">
+							  <h5><a href="#">Latest Computer Science and Programming</a></h5>
+							</div>
+							<span class="cs-free">Free</span>
+							<div class="cs-post-meta">
+							  <span>By
+							    <a href="#" class="cs-color">James,</a>
+							    <a href="#" class="cs-color">Howdson</a>
+							  </span>
+							</div>
+	            		</div>
+	            	</div>
+	            </div>
+	            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" data-tag="paid">
+	            	<div class="cs-courses courses-grid">
+	            		<div class="cs-media">
+	            			<figure><a href="#"><img src="assets/extra-images/course-grid-img7.jpg" alt=""/></a></figure>
+	            		</div>
+	            		<div class="cs-text">
+	            		    <div class="cs-rating">
+	            		      <div class="cs-rating-star">
+	            		        <span class="rating-box" style="width:100%;"></span>
+	            		      </div>
+	            		    </div>
+							<div class="cs-post-title">
+							  <h5><a href="#">How to Design a Logo a Beginners Course</a></h5>
+							</div>
+							<span class="cs-courses-price"><em>$</em>149.99</span>
+							<div class="cs-post-meta">
+							  <span>By
+							    <a href="#" class="cs-color">James,</a>
+							    <a href="#" class="cs-color">Howdson</a>
+							  </span>
+							</div>
+	            		</div>
+	            	</div>
+	            </div>
+	            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" data-tag="free">
+	            	<div class="cs-courses courses-grid">
+	            		<div class="cs-media">
+	            			<figure><a href="#"><img src="assets/extra-images/course-grid-img8.jpg" alt=""/></a></figure>
+	            		</div>
+	            		<div class="cs-text">
+	            		    <div class="cs-rating">
+	            		      <div class="cs-rating-star">
+	            		        <span class="rating-box" style="width:100%;"></span>
+	            		      </div>
+	            		    </div>
+							<div class="cs-post-title">
+							  <h5><a href="#">Swift Programming for Beginners</a></h5>
+							</div>
+							<span class="cs-free">Free</span>
+							<div class="cs-post-meta">
+							  <span>By
+							    <a href="#" class="cs-color">James,</a>
+							    <a href="#" class="cs-color">Howdson</a>
+							  </span>
+							</div>
+	            		</div>
+	            	</div>
+	            </div>
+	            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" data-tag="paid">
+	            	<div class="cs-courses courses-grid">
+	            		<div class="cs-media">
+	            			<figure><a href="#"><img src="assets/extra-images/course-grid-img9.jpg" alt=""/></a></figure>
+	            		</div>
+	            		<div class="cs-text">
+	            			<span class="cs-caption">CC</span>
+	            		    <div class="cs-rating">
+	            		      <div class="cs-rating-star">
+	            		        <span class="rating-box" style="width:100%;"></span>
+	            		      </div>
+	            		    </div>
+							<div class="cs-post-title">
+							  <h5><a href="#">Introduction to Mobile Apps Development</a></h5>
+							</div>
+							<span class="cs-courses-price"><em>$</em>39.99</span>
+							<div class="cs-post-meta">
+							  <span>By
+							    <a href="#" class="cs-color">James,</a>
+							    <a href="#" class="cs-color">Howdson</a>
+							  </span>
+							</div>
+	            		</div>
+	            	</div>
+	            </div>
+	            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" data-tag="paid">
+	            	<div class="cs-courses courses-grid">
+	            		<div class="cs-media">
+	            			<figure><a href="#"><img src="assets/extra-images/course-grid-img10.jpg" alt=""/></a></figure>
+	            		</div>
+	            		<div class="cs-text">
+	            		    <div class="cs-rating">
+	            		      <div class="cs-rating-star">
+	            		        <span class="rating-box" style="width:100%;"></span>
+	            		      </div>
+	            		    </div>
+							<div class="cs-post-title">
+							  <h5><a href="#">Swift Programming for Beginners</a></h5>
+							</div>
+							<span class="cs-courses-price"><em>$</em>289.99</span>
+							<div class="cs-post-meta">
+							  <span>By
+							    <a href="#" class="cs-color">James,</a>
+							    <a href="#" class="cs-color">Howdson</a>
+							  </span>
+							</div>
+	            		</div>
+	            	</div>
+	            </div>
+	            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" data-tag="paid">
+	            	<div class="cs-courses courses-grid">
+	            		<div class="cs-media">
+	            			<figure><a href="#"><img src="assets/extra-images/course-grid-img11.jpg" alt=""/></a></figure>
+	            		</div>
+	            		<div class="cs-text">
+	            		    <div class="cs-rating">
+	            		      <div class="cs-rating-star">
+	            		        <span class="rating-box" style="width:100%;"></span>
+	            		      </div>
+	            		    </div>
+							<div class="cs-post-title">
+							  <h5><a href="#">Swift Programming for Beginners</a></h5>
+							</div>
+							<span class="cs-courses-price"><em>$</em>155.25</span>
+							<div class="cs-post-meta">
+							  <span>By
+							    <a href="#" class="cs-color">James,</a>
+							    <a href="#" class="cs-color">Howdson</a>
+							  </span>
+							</div>
+	            		</div>
+	            	</div>
+	            </div>
+	            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" data-tag="paid">
+	            	<div class="cs-courses courses-grid">
+	            		<div class="cs-media">
+	            			<figure><a href="#"><img src="assets/extra-images/course-grid-img12.jpg" alt=""/></a></figure>
+	            		</div>
+	            		<div class="cs-text">
+	            		    <div class="cs-rating">
+	            		      <div class="cs-rating-star">
+	            		        <span class="rating-box" style="width:100%;"></span>
+	            		      </div>
+	            		    </div>
+							<div class="cs-post-title">
+							  <h5><a href="#">Swift Programming for Beginners</a></h5>
+							</div>
+							<span class="cs-courses-price"><em>$</em>50.75</span>
+							<div class="cs-post-meta">
+							  <span>By
+							    <a href="#" class="cs-color">James,</a>
+							    <a href="#" class="cs-color">Howdson</a>
+							  </span>
+							</div>
+	            		</div>
+	            	</div>
+	            </div>
+	            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="cs-pagination">
+						<ul class="pagination">
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li><a href="#">6</a></li>
+							<li><a href="#">7</a></li>
+							<li><a href="#">8</a></li>
+							<li><a href="#"><i class=" icon-dots-three-horizontal"></i></a></li>
+							<li><a href="#">10</a></li>
+							<li><a href="#">36</a></li>
+						</ul>
+					</div>
+				</div>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+	  </div> 
+	</div>
+	<!-- Main End --> 
+	<!-- Footer Start -->
+	<footer id="footer"> 
+		<div class="cs-footer-widgets">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="widget widget-text">
+                            <div class="widget-section-title"><h6 style="color:#fff !important">Contact us</h6></div>
+                            <ul>
+                                <li>
+                                	<i class="icon-light-bulb "></i>
+                                    <p>6330 South 3000 East, Suite 700 Salt Lake City, UT 84121</p>
+                                </li>
+                                <li>
+                                	<i class="icon-phone3"></i>
+                                    <p>800 123 456 789</p>
+                                </li>
+                                <li>
+                                	<i class="icon-mail"></i>
+                                    <p><a href="mailto:info@canvaslms.com">info@canvaslms.com</a></p>
+                                </li>
+                                <li>
+                                	<i class="icon-pin"></i>
+                                    <p>08:00 to 07:40</p>
+                                </li>
+                            </ul>	
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="widget widget-categores">
+                            <div class="widget-section-title"><h6 style="color:#fff !important">Student & Staff</h6></div>
+                            <ul>
+                                <li><a href="#">Student portal</a></li>
+                                <li><a href="#">Staff portal</a></li>
+                                <li><a href="#">Find a member of staff</a></li>
+                                <li><a href="#">Greenwich VIP</a></li>
+                                <li><a href="#">IT & library services</a></li>
+                                <li><a href="#">Greenwich Connect</a></li>
+                            </ul>	
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="widget widget-useful-links">
+                            <div class="widget-section-title"><h6 style="color:#fff !important">Useful links</h6></div>
+                            <ul>
+                                <li><a href="#">Accessibility</a></li>
+                                <li><a href="#">Privacy and cookies</a></li>
+                                <li><a href="#">Freedom of Information</a></li>
+                                <li><a href="#">Legal information</a></li>
+                                <li><a href="#">Terms & conditions</a></li>
+                                <li><a href="#">Copyright</a></li>
+                            </ul>	
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="widget widget-news-letter">
+                            <div class="widget-section-title"><h6 style="color:#fff !important">NewsLetter</h6></div>
+                            <p>Subcribe to out newsletter. We do not spam. We promise</p>
+							<div class="cs-form">
+                            	<form>
+                                	<div class="input-holder">
+                                    	<i class="icon-envelope3"></i>
+                                    	<input type="email" placeholder="example@email.com">
+                                        <label>
+                                    		<input type="submit" value="Subscribe" class="cs-bgcolor">
+                                        </label>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</div>
+        <div class="container">
+        	<div class="row">
+            	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                	<div class="cs-footer-logo-holder center">
+                        <div class="cs-footer-nav">
+                            <div class="cs-logo">
+                                <div class="cs-media">
+                                    <figure>
+                                        <a href="index-2.html"><img src="assets/images/footer-logo.png" alt="" /></a>
+                                    </figure>
+                                </div>
+                            </div> 
+                            <div class="footer-nav">
+                            	<ul>
+                                	<li><a href="#">About</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Affiliate Program</a></li>
+                                    <li><a href="#">Terms</a></li>
+                                    <li><a href="#">Privacy</a></li>
+                                    <li><a href="#">Press Kit</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div>                       
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cs-copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="copyright-text">
+                            <p>© 2016 SmartStudy :  Best WordPress Theme Ever. All Rights Reserved.<a class="cs-color" href="#"> Chimp Group</a></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="cs-social-media">
+                         	<ul>
+                             	<li><a href="#"><i class="icon-facebook2"></i></a></li>
+                                <li><a href="#"><i class="icon-twitter2"></i></a></li>
+                                <li><a href="#"><i class="icon-instagram2"></i></a></li>
+                                <li><a href="#"><i class="icon-youtube3"></i></a></li>
+                                <li><a href="#"><i class="icon-linkedin22"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+	</footer>
+	<!-- Footer End --> 
+</div>
+
+<script src="assets/scripts/responsive.menu.js"></script> 
+<script src="assets/scripts/chosen.select.js"></script> 
+<script src="assets/scripts/slick.js"></script> 
+<script src="assets/scripts/jquery.mCustomScrollbar.concat.min.js"></script> 
+<script src="assets/scripts/jquery.mobile-menu.min.js"></script>
+<script src="assets/scripts/fliters.js"></script><!-- Fliters -->
+<!-- Put all Functions in functions.js --> 
+<script src="assets/scripts/functions.js"></script>
+</body>
+
+<!-- Mirrored from chimpgroup.com/themeforest/smart-study/courses-grid.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Apr 2020 15:26:29 GMT -->
+</html>
